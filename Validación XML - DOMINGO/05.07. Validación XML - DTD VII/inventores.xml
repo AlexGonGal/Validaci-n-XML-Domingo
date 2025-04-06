@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventores [
+  <!ELEMENT inventores (inventor*)>
+  <!ELEMENT inventor EMPTY>
+  <!ATTLIST inventor
+    invento CDATA #REQUIRED
+    nombre ID #REQUIRED
+  >
+]>
+<inventores>
+  <inventor nombre="RobertAdler" invento="Mando a distancia"/>
+  <inventor nombre="LaszloJosefBiro" invento="Bolígrafo"/>
+  <inventor nombre="JosephineGarísCochran" invento="Lavaplatos"/>
+  <inventor nombre="Fuego" invento="Fuego"/>
+</inventores>
+<!-- Se añadió la lista de <inventor> y se usó ID sin espacios en 'nombre' -->
