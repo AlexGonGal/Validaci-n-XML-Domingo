@@ -3,4 +3,4 @@
 <!ELEMENT numeros (#PCDATA)>
 ]>
 <numeros></numeros>
-<!-- Como numero no esta declarado em la dtd, hay q eliminarlo-->
+<!-- Como numero no esta declarado en la dtd, hay q eliminarlo-->
