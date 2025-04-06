@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuadros [
+<!ELEMENT cuadros (cuadro*)>
+<!ELEMENT cuadro EMPTY>
+<!ATTLIST cuadro titulo ID #REQUIRED>
+<!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+<cuadros>
+  <cuadro titulo="adamEva" autor="Alberto Durero"/>
+  <cuadro titulo="lucasCranach" autor="Lucas Cranach, el viejo"/>
+</cuadros>
+<!-- Se cambiaron los valores del atributo "titulo" para que sean únicos, ya que están definidos como tipo ID y no pueden repetirse. También se aseguraron de tener el atributo "autor" que es obligatorio. -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT futbol (jugador*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKEN #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+]>
+<futbol>
+  <jugador nombre="DiStefano" codigo="j1"/>
+  <jugador nombre="Pele" codigo="j2"/>
+  <jugador nombre="Maradona" codigo="j3"/>
+  <jugador nombre="Cruyff" codigo="j4"/>
+</futbol>
+<!-- Se eliminaron los nombres largos con espacios, ya que el tipo NMTOKEN no permite espacios. También se aseguraron códigos únicos para el atributo tipo ID. -->

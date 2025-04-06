@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT futbol (jugador+, equipo)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKEN #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+<!ELEMENT equipo EMPTY>
+<!ATTLIST equipo nombre NMTOKEN #REQUIRED>
+<!ATTLIST equipo jugadores IDREFS #REQUIRED>
+]>
+<futbol>
+  <jugador nombre="DiStefano" codigo="j1"/>
+  <jugador nombre="Pele" codigo="j2"/>
+  <jugador nombre="Maradona" codigo="j3"/>
+  <jugador nombre="Cruyff" codigo="j4"/>
+  <equipo nombre="FutbolClubBarcelona" jugadores="j3 j4"/>
+</futbol>
+<!-- Se corrigieron los valores de los atributos "nombre" y "jugadores": - "nombre" del equipo no puede tener espacios por ser NMTOKEN. - "jugadores" debe contener referencias (IDREFS) válidas a los códigos (ID) de jugadores definidos previamente. Se corrigió para que coincidan. -->
